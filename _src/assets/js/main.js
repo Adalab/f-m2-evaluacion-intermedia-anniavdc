@@ -24,7 +24,7 @@ const userNumber = document.querySelector('#number');
 const userAttempts = document.querySelector('.attempts');
 const userResult = document.querySelector('.result');
 const button = document.querySelector('.button');
-
+let counter = 0;
 console.log(button);
 
 
@@ -33,7 +33,6 @@ console.log(button);
 //button.addEventListener('click', handlerButton);
 
 //Funcion generadora de números al azar entre 0-100
-
 function getRandomNumber(min=0,max=100){
     console.log('chao');
     min = Math.ceil(min);
@@ -42,45 +41,39 @@ function getRandomNumber(min=0,max=100){
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-console.log(getRandomNumber());
-
-//event.preventDefault para el button
 //console.log
+const randomNumber = getRandomNumber();
+console.log(randomNumber);
+
 
 //Función para que al pulsar el botón de prueba, acceder al contenido del input y mostrarlo en la consola
-
-function getUserNumber(event){
-    event.preventDefault();
-
+function getUserNumber(){
     console.log (userNumber.value);
     return parseInt(userNumber.value);
     
 }
 
-//button.addEventListener('click', getUserNumber);
 
 //Función comparar el número que el usuario ha escrito en el input con el número aleatorio, y pintar el feedback correspondiente en la pantalla ("demasiado alto", "demasiado bajo", "¡HAS
 //GANADO, CAMPEONA!")
-
-
-function compareNumbers(event){
+function handlerButton(event){
     event.preventDefault();
     console.log('hola');
-    if(getUserNumber > getRandomNumber){
+
+    const userNumberInput = getUserNumber(); 
+
+    if(userNumberInput > randomNumber){
         userResult.innerHTML = 'demasiado alto';
-    }else if(getUserNumber < getRandomNumber){
+    }else if(userNumberInput < randomNumber){
         userResult.innerHTML = 'demasiado bajo';
-    }else if(getUserNumber === getRandomNumber){
+    }else if(userNumberInput === randomNumber){
         userResult.innerHTML = 'Has ganado, campeona!';
     }
+//actualizar el contador de intentos cada vez que el usuario pruebe
+    counter += 1;
+    userAttempts.innerHTML = counter;
 }
 
-button.addEventListener('click', compareNumbers);
-
-
-//console.log
-
-//actualizar el contador de intentos cada vez que el usuario pruebe
-//console.log
+button.addEventListener('click', handlerButton);
 
 //Poner estilos en CSS
