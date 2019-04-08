@@ -51,6 +51,7 @@ console.log(getRandomNumber());
 
 function getUserNumber(event){
     event.preventDefault();
+    parseInt(userNumber.value);
     console.log (userNumber.value);
 }
 
@@ -61,14 +62,13 @@ function getUserNumber(event){
 
 
 function compareNumbers(event){
-    const input = parseInt(getUserNumber);
     event.preventDefault();
     console.log('hola');
-    if(input > getRandomNumber){
+    if(getUserNumber > getRandomNumber){
         userResult.innerHTML = 'demasiado alto';
-    }else if(input < getRandomNumber){
+    }else if(getUserNumber < getRandomNumber){
         userResult.innerHTML = 'demasiado bajo';
-    }else if(input === getRandomNumber){
+    }else if(getUserNumber === getRandomNumber){
         userResult.innerHTML = 'Has ganado, campeona!';
     }
 }
