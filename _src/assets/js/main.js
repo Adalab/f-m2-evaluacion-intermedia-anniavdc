@@ -25,6 +25,7 @@ contabilizando el número de intentos. Hasta que al final el jugador acierta el 
 //console.log
 
 //Funcion generadora de números al azar entre 0-100
+//event.preventDefault para el button
 //console.log
 //Función para que al pulsar el botón de prueba, acceder al contenido del input y mostrarlo en la consola
 //Función comparar el número que el usuario ha escrito en el input con el número aleatorio, y pintar el
