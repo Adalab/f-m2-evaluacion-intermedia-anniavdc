@@ -51,8 +51,10 @@ console.log(getRandomNumber());
 
 function getUserNumber(event){
     event.preventDefault();
-    parseInt(userNumber.value);
+
     console.log (userNumber.value);
+    return parseInt(userNumber.value);
+    
 }
 
 //button.addEventListener('click', getUserNumber);
