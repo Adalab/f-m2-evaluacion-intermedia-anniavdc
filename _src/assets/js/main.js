@@ -22,11 +22,18 @@ contabilizando el número de intentos. Hasta que al final el jugador acierta el 
     //p azul
 
 //Añadir un listener al button
+//console.log
 
 //Funcion generadora de números al azar entre 0-100
+//console.log
 //Función para que al pulsar el botón de prueba, acceder al contenido del input y mostrarlo en la consola
 //Función comparar el número que el usuario ha escrito en el input con el número aleatorio, y pintar el
+//console.log
 //feedback correspondiente en la pantalla ("demasiado alto", "demasiado bajo", "¡HAS
 //GANADO, CAMPEONA!")
+//console.log
 
 //actualizar el contador de intentos cada vez que el usuario pruebe
+//console.log
+
+//Poner estilos en CSS
