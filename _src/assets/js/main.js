@@ -5,10 +5,8 @@ const userAttempts = document.querySelector('.attempts');
 const userResult = document.querySelector('.result');
 const button = document.querySelector('.button');
 let counter = 0;
-console.log(button);
 
 function getRandomNumber(min=0,max=100){
-    console.log('chao');
     min = Math.ceil(min);
     max = Math.floor(max);
     
@@ -16,27 +14,33 @@ function getRandomNumber(min=0,max=100){
 }
 
 const randomNumber = getRandomNumber();
-console.log(randomNumber);
 
-function getUserNumber(){
-    console.log (userNumber.value);
-    return parseInt(userNumber.value);
-    
-}
+const getUserNumber = () => parseInt(userNumber.value);   
+
 
 function handlerButton(event){
     event.preventDefault();
 
+    userFeedback();
+
+    timeCounter();
+}
+
+const feedbackText = (string) => userResult.innerHTML = string;
+
+const userFeedback = () =>{
     const userNumberInput = getUserNumber(); 
 
     if(userNumberInput > randomNumber){
-        userResult.innerHTML = 'demasiado alto';
+        feedbackText('demasiado alto');
     }else if(userNumberInput < randomNumber){
-        userResult.innerHTML = 'demasiado bajo';
+        feedbackText('demasiado bajo');
     }else if(userNumberInput === randomNumber){
-        userResult.innerHTML = 'Has ganado, campeona!';
+        feedbackText('Has ganado, campeona!');
     }
+}
 
+const timeCounter = () =>{
     counter += 1;
     userAttempts.innerHTML = counter;
 }
