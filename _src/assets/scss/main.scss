@@ -60,11 +60,11 @@ button{
 	width: 100px;
 }
 .dog-head{
-	width: 150px;
+	width: 140px;
 	height: 150px;
 	background-color: rgb(214, 214, 214);
 	border-radius: 50%;
-	border: 2px solid grey;
+	border: 1px solid grey;
 	position: absolute;
 	z-index: 5;
 	box-shadow: 0 8px 6px -6px rgb(133, 133, 133);
@@ -77,7 +77,7 @@ button{
 	border: 2px solid rgb(48, 48, 48);
 	position: absolute;
 	top: 25px;
-	left: 20px;
+	left: 15px;
 }
 .dog-eye-l::after{
 	content: ' ';
@@ -100,7 +100,7 @@ button{
 	position: absolute;
 	z-index: 20;
 	top: 45px;
-	left: 45px;
+	left: 42px;
 }
 .eye-dot-l::after{
 	content: ' ';
@@ -121,7 +121,7 @@ button{
 	border: 2px solid rgb(48, 48, 48);
 	position: absolute;
 	top: 25px;
-	left: 75px;
+	left: 70px;
 }
 .dog-eye-r::after{
 	content: ' ';
@@ -144,7 +144,7 @@ button{
 	position: absolute;
 	z-index: 20;
 	top: 45px;
-	left: 98px;
+	left: 92px;
 	transform: scale(-1,1);
 }
 .eye-dot-r::after{
@@ -159,31 +159,29 @@ button{
 	left: -3px;
 }
 .dog-ear-r{
-	width: 100px;
-	height: 40px;
+	width: 110px;
+	height: 35px;
 	background-color: rgb(56, 55, 55);
 	position: absolute;
-	top: 10px;
-	left: 90px;
-	transform: rotate(55deg);
-    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
-    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+	top: 35px;
+	left: 80px;
+	transform: rotate(65deg);
+    border-radius: 100% 20% 80% 0;
     border: 2px solid #333333;
 	border-bottom: 0;
 	box-shadow: inset 0 5px #303030;
 }
 .dog-ear-l{
-	width: 100px;
-	height: 40px;
+	width: 110px;
+	height: 35px;
 	background-color: rgb(68, 68, 68);
 	position: absolute;
-	top: 10px;
-	left: -45px;
-    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
-    border-top-right-radius: 110px; /* 100px of height + 10px of border */
-    border: 2px solid #333333;
+	top: 35px;
+    left: -50px;
+    border-radius: 100% 20% 80% 0;
+	border: 2px solid #333333;
 	border-bottom: 0;
-	transform: scale(-1, 1) rotate(55deg);
+	transform: scale(-1, 1) rotate(65deg);
 	box-shadow: inset 0 5px #303030;
 }
 
@@ -193,7 +191,7 @@ button{
 	background-color: rgb(214, 214, 214);
 	position: absolute;
 	top: 110px;
-	left: 45px;
+	left: 40px;
     border-top-left-radius: 110px;  /* 100px of height + 10px of border */
     border-top-right-radius: 110px; /* 100px of height + 10px of border */
     border: 1px solid rgb(0, 0, 0);
@@ -207,7 +205,7 @@ button{
 	background-color: rgb(214, 214, 214);
 	position: absolute;
 	top: 110px;
-	left: 72px;
+	left: 67px;
     border-top-left-radius: 110px;  /* 100px of height + 10px of border */
     border-top-right-radius: 110px; /* 100px of height + 10px of border */
     border: 1px solid rgb(0, 0, 0);
@@ -221,7 +219,7 @@ button{
 	background-color: rgb(165, 0, 36);
 	position: absolute;
 	top: 115px;
-	left: 67px;
+	left: 62px;
     border-top-left-radius: 110px;  /* 100px of height + 10px of border */
     border-top-right-radius: 110px; /* 100px of height + 10px of border */
     border: 1px solid rgb(105, 0, 0);
@@ -238,17 +236,19 @@ button{
 	border-top: 30px solid rgb(0, 0, 0);
 	position: absolute;
 	top: 80px;
-	left: 45px;
+	left: 40px;
 }
 .dog-body{
-	width: 200px;
+	width: 170px;
 	height: 200px;
 	background-color: rgb(214, 214, 214);
 	border-radius: 50%;
+	border: 1px solid grey;
 	position: absolute;
 	top: 80px;
-	left: -20px;
-	box-shadow: inset 0 0 20px #9c9c9c
+	left: -11px;
+	box-shadow: inset 0 0 20px #9c9c9c;
+	z-index: 2;
 }
 .dog-paw-r{
 	width: 60px;
@@ -257,7 +257,7 @@ button{
 	position: absolute;
 	z-index: 5;
 	bottom: -5px;
-	left: 100px;
+	left: 95px;
 	border-radius: 50%;
     border-top-left-radius: 110px;  /* 100px of height + 10px of border */
     border-top-right-radius: 110px; /* 100px of height + 10px of border */
@@ -328,8 +328,8 @@ button{
 	position: absolute;
 	bottom: 7px;
 	left: 5px;
-    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
-    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
     border: 1px solid gray;
 	border-bottom: 0;
 	transform: rotate(90deg);
@@ -343,8 +343,8 @@ button{
 	position: absolute;
 	bottom: 7px;
 	left: 35px;
-    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
-    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
     border: 1px solid gray;
 	border-bottom: 0;
 	transform: rotate(90deg);
@@ -359,4 +359,56 @@ button{
 	z-index: 10;
 	bottom: 0;
 	left: 50%;
+}
+.dog-leg-l{
+	height: 35px;
+	width: 1px;
+	background-color: rgb(165, 165, 165);
+	position: absolute;
+	z-index: 10;
+	bottom: 33px;
+	left: 40px;
+}
+.dog-leg-l::after{
+	content:' ';
+	height: 30px;
+	width: 1px;
+	background-color: rgb(165, 165, 165);
+	position: absolute;
+	z-index: 10;
+	bottom: 0px;
+	left: 30px;
+}
+.dog-leg-r{
+	height: 30px;
+	width: 1px;
+	background-color: rgb(165, 165, 165);
+	position: absolute;
+	z-index: 10;
+	bottom: 33px;
+	left: 110px;
+}
+.dog-leg-r::after{
+	content:' ';
+	height: 35px;
+	width: 1px;
+	background-color: rgb(165, 165, 165);
+	position: absolute;
+	z-index: 10;
+	bottom: 0px;
+	left: 30px;
+}
+.dog-tail{
+	width: 80px;
+	height: 15px;
+	background-color: rgb(180, 179, 179);
+	position: relative;
+	top: 170px;
+    left: 130px;
+	transform: rotate(165deg);
+    border-radius: 100% 0 0 0;
+    border: 1px solid gray;
+	border-bottom: 0;
+	box-shadow: inset 0 5px #a7a7a7;
+	z-index: 1;
 }
